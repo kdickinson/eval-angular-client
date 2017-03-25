@@ -2,7 +2,9 @@ Evaluation Evolved Angular Client
 =================================
 Setup:
 
-`You must have node js and npm installed`
+`You must have node js, npm, gulp, and bower installed`
+
+`To get everything ready run: npm install then run gulp`
 
 Start the server:
 
