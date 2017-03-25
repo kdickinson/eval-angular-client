@@ -1,20 +1,11 @@
-Angular Skeleton
-================
+Evaluation Evolved Angular Client
+=================================
+Setup:
 
-Clone the repo:
-
-`git clone git@github.com:mbildner/angular-skeleton.git`
-
-Enter the directory:
-
-`cd angular-skeleton/`
-
-Install dependencies:
-
-`npm install`
+`You must have node js and npm installed`
 
 Start the server:
 
-`node server.js`
+`npm start`
 
-Go nuts.
+Navigate to http://localhost:8000
