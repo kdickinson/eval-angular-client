@@ -1,7 +1,15 @@
-angular.module('app').controller('HomePageController', function ($scope) {
+angular.module('app').controller('HomePageController', function ($scope, $timeout) {
   'use strict';
 
 	$scope.greetingText = 'Sample Test';
+  $scope.currentQuestion = 0;
+  $scope.goToNextQuestion = function() {
+    $timeout(function(){
+            $scope.currentQuestion++;
+            $scope.currentQuestionData = $scope.test.questions[$scope.currentQuestion];
+        }
+    );
+  };
   $scope.test = {
     questions:[
         {
@@ -114,4 +122,5 @@ angular.module('app').controller('HomePageController', function ($scope) {
         }
     ]
 };
+  $scope.currentQuestionData = $scope.test.questions[$scope.currentQuestion];
 });

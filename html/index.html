@@ -10,11 +10,12 @@
 		label {display: block}
 	</style>
 	<h1>{{greetingText}}</h1>
-	<div ng-repeat="question in test.questions">
-		<h2>{{question.question}}</h2>
-		<label ng-repeat="distractor in question.distractors">
-			<input type="radio" name="question{{question.id}}" value="{{$index}}">{{distractor.text}}
+	<div>
+		<h2>{{currentQuestionData.question}}</h2>
+		<label ng-repeat="distractor in currentQuestionData.distractors">
+			<input type="radio" name="currentQuestionData{{currentQuestionData.id}}" value="{{$index}}">{{distractor.text}}
 		</label>
+		<button ng-click="goToNextQuestion()">Next Question</button>
 	</div>
 </body>
 </html>
