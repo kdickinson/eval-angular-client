@@ -1,0 +1,4 @@
+<h2>{{currentQuestion.question}}</h2>
+<label ng-repeat="distractor in currentQuestion.distractors">
+    <input type="radio" name="currentQuestion{{currentQuestionData.id}}" value="{{$index}}">{{distractor.text}}
+</label>
