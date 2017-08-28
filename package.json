@@ -1,7 +1,7 @@
 {
-  "name": "angular-skeleton",
+  "name": "eval-angular-client",
   "version": "0.0.0",
-  "description": "Simple angular app with express server backing it for rapid prototyping and testing.",
+  "description": "Simple (and incomplete) angular client for web based student evaluations.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbildner/angular-skeleton.git"
-  },
-  "author": "Moshe Bildner",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mbildner/angular-skeleton/issues"
-  },
-  "homepage": "https://github.com/mbildner/angular-skeleton",
+    "url": "https://github.com/kdickinson/eval-angular-client.git"
+  },`
+  "author": "Ken Dickinson",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.10.0",
     "bower": "^1.3.12",
-    "cookie-parser": "^1.3.3",
-    "express": "^4.10.6",
     "gulp": "^3.8.10",
     "gulp-angular-templatecache": "^1.5.0",
     "gulp-concat": "^2.4.2",
@@ -30,10 +23,12 @@
     "main-bower-files": "^2.4.1",
     "require-dir": "^0.1.0",
     "rimraf": "^2.2.8",
+    "body-parser": "^1.10.0",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.10.6",
     "yargs": "^1.3.3"
   },
   "devDependencies": {
-    "bower-files": "^3.4.4",
-    "jasmine": "^2.8.0"
+    "bower-files": "^3.4.4"
   }
 }
